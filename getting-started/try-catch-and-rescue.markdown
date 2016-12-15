@@ -37,8 +37,8 @@ You can also define your own errors by creating a module and using the `defexcep
 
 ```iex
 iex> defmodule MyError do
-iex>   defexception message: "default message"
-iex> end
+...>   defexception message: "default message"
+...> end
 iex> raise MyError
 ** (MyError) default message
 iex> raise MyError, message: "custom message"
